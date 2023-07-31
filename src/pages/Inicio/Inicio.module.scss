@@ -1,0 +1,49 @@
+@import '~/styles/__variaveis.scss';
+
+.secao__slider{
+    padding:$umEmMeio 0;
+    background-image:linear-gradient($corPrimaria,$corTercearia, $corSecundaria);
+    
+}
+.informacao{
+    padding:$umEm;
+    display:grid;
+    grid-template-columns:50% 50%;
+    background-color:rgba($corTercearia, 0.4);
+    &__esquerda{
+        background:$corPrimaria;
+        text-align:center;
+        padding:$meioEm;
+        border-radius:10px;
+            & h2{
+            font-size:$umEmMeio;
+            color:$corTercearia;
+            font-family:$fonteSecundaria;
+            margin:$meioEm;
+        }
+            &__texto{
+                padding:$meioEm;
+                margin:$meioEm;
+                background:mix($corSecundaria,$corPrimaria,80);
+                border-radius:$meioEm;
+            }
+            & p{
+                margin:0;
+                padding:-$meioEm;
+                font-size:$umEm;
+                color:mix($corQuarternaria,$corTercearia,20);
+                font-family:$fontePrimaria;
+            }
+    }
+    &__direita{
+        padding:$umEm $meioEm;
+        background:$corSecundaria;
+        border-radius:$meioEm;
+        & img{
+            max-width:100%;
+            border-radius:$meioEm;
+            border:1px outset $corQuarternaria;
+        }
+    }
+
+}

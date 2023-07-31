@@ -1,0 +1,17 @@
+@import '../../styles/_variaveis';
+
+
+    .slider__container{
+        display:flex;
+        justify-content:center;
+        position:relative;
+        & img{
+            max-width:50%;
+            border-radius:20px;
+            border:2px solid $corPrimaria;
+        }
+}
+
+
+
+

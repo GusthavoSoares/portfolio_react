@@ -1,0 +1,29 @@
+@import '../../styles/_variaveis';
+
+.menu {
+   padding:1.2em;
+    background-color:$corPrimaria;
+    &__navegacao{
+    display:flex;
+    gap:30px;
+    justify-content:end;
+    }
+    &__link{
+        text-decoration:none;
+        color:$corQuarternaria;
+        font-size:$tamanhoFonteNormal;
+        font-family:$fonteSecundaria;
+        &:hover{
+            transform:scale(1.1);
+            transition:1s;
+            color:$corTercearia;
+            
+        }
+        &__ativo{
+            color:$corTercearia;
+            text-decoration:underline 
+            $corSecundaria;
+            padding-bottom:1px;
+        }
+    }
+}
